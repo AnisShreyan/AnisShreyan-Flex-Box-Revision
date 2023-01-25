@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.nav ul li {
+  display: inline;
+  margin: 0 12px;
+}
+
+.nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.li-a::after{
+  content: "";
+  background-color: #ababe8;
+  height: 3px;
+  width: 0;
+  display: block
+}
+.li-a:hover::after{
+  width: 100%;
+  transition: width 0.5s;
+}
+
+
+#sign-up {
+  background-color: #bcbcf4;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+#sign-up:hover {
+  background-color: #ababe8;
+  transition: background-color 1.2s;
+}
+#sign-up:not(:hover) {
+  transition: background-color 1.2s;
+}
+
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+
+.hero-detl{
+    width: 400px;
+}
+.hero-detl h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 4rem;
+}
+.hero-detl h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #DD9C22;
+}
+
+.hero-detl p{
+    margin:15px 0 45px;
+}
+.hero-detl a{
+    text-decoration: none;
+}
+
+
+.hero-img{
+    width: 600px;
+}
